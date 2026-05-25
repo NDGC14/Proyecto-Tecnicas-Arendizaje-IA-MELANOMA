@@ -27,7 +27,7 @@ COLORS = {
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('mejor_modelo.h5')
+    return tf.keras.models.load_model('skin_cancer_app/mejor_modelo.h5')
 
 def preprocess_image(image):
     img = image.convert('RGB').resize((IMG_SIZE, IMG_SIZE))
